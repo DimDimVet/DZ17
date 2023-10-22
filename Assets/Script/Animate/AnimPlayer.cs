@@ -4,9 +4,6 @@ using static EventManager;
 
 public class AnimPlayer : MonoBehaviour
 {
-
-    [SerializeField] private AK.Wwise.Event audioEvent;
-
     [SerializeField] private AnimSettings animSettings;
 
     private RegistratorConstruction rezultInput;
@@ -22,7 +19,6 @@ public class AnimPlayer : MonoBehaviour
     private float2 distans;
 
     private bool isRun;
-    private bool IsMoveAK = false;
 
     private void OnEnable()
     {
@@ -78,18 +74,10 @@ public class AnimPlayer : MonoBehaviour
 
             if (distans.x >= refDistance || distans.y >= refDistance)
             {
-                if (!IsMoveAK)
-                {
-                    IsMoveAK=true;
-                    audioEvent.Post(this.gameObject);
-                }
-
                 animator.SetFloat(animSpeed, speed * math.distancesq(distans.x, -distans.y));
             }
             else
             {
-                audioEvent.Stop(this.gameObject);
-                IsMoveAK = false;
                 animator.SetFloat(animSpeed, 0);
             }
 

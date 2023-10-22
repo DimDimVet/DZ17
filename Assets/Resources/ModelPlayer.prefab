@@ -6641,10 +6641,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b79039b8732f3b640be15adfe50fea16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioEvent:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: eb09e349ee5ca794c983a16663db224b, type: 2}
   animSettings: {fileID: 11400000, guid: d7ccd24c7e2761045820656f8f8fc7de, type: 2}
 --- !u!114 &8634523454750722470
 MonoBehaviour:
@@ -6674,10 +6670,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ff1025939e513d49a76379596970ff2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioEvent:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: e12ad10c6657f944b997253329a24368, type: 2}
   actionSettings: {fileID: 11400000, guid: b16bf34b4be98284ebec2dcd7f9fa6cb, type: 2}
   bullet: {fileID: 666899814636228908, guid: fccd8accd9ebf724aa8ffc3508e710e4, type: 3}
   outBullet: {fileID: 6086253454069508534}

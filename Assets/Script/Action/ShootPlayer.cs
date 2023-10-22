@@ -5,8 +5,6 @@ using static EventManager;
 
 public class ShootPlayer : Action
 {
-    [SerializeField] private AK.Wwise.Event audioEvent;
-
     [SerializeField] private ActionSettings actionSettings;
 
     private int countBull = 0;
@@ -82,8 +80,6 @@ public class ShootPlayer : Action
         {
             shootTime = Time.time;
         }
-
-        audioEvent.Post(this.gameObject);
 
         countBull++;
         for (int i = 0; i < bulls.Count; i++)

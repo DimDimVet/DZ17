@@ -59,18 +59,15 @@ public class MovePlayer :UserInput
             }
             if (InputData.Move.y < 0)
             {
-                
                 transform.position -= transform.forward / speedMove;
             }
 
             if (InputData.Move.x > 0)
             {
-               
                 transform.position += transform.right / speedMove;
             }
             if (InputData.Move.x < 0)
             {
-                
                 transform.position -= transform.right / speedMove;
             }
 
